@@ -1,7 +1,15 @@
+package edu.anant.ai.aspect;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.ai.chat.client.ChatClientRequest;
+import org.springframework.ai.chat.client.ChatClientResponse;
+import org.springframework.ai.chat.client.advisor.api.CallAdvisor;
+import org.springframework.ai.chat.client.advisor.api.CallAdvisorChain;
+import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class LoggingAdvisor implements CallAdvisor  {
+public class LoggingAdvisor implements CallAdvisor {
 
     @Override
     public String getName() {
